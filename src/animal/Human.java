@@ -9,11 +9,11 @@ public class Human extends Animal implements Thinkable {
     // コンストラクタ
     public Human() {
     }
-    public Human(String name, int age) {
-        super.setName(name);
-        super.setAge(age);
-        this.hobby = "未定";
+    public Human(String name, int age, String hobby) {
+        super(name, age);
+        this.hobby =hobby;
     }
+
     @Override
     public void think() {
         System.out.println("私は"+hobby+"について考えています。");
